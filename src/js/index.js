@@ -38,7 +38,7 @@ function  setRandomQuote(){
     if(randomIndex === lastIndex) return setRandomQuote();
     const randomQuote = quotes[randomIndex];
     console.log({randomIndex,randomQuote})
-    quoteParentElement.children[0].textContent = randomQuote.quote;
+    quoteParentElement.children[0].children[0].textContent = randomQuote.quote;
     quoteParentElement.children[1].textContent = `-${randomQuote.userName}`;
     lastIndex = randomIndex;
 }
